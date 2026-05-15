@@ -3,9 +3,13 @@ In this task the problem statement is “Create a Python program that can encryp
 What is Caesar Cipher?
 Imagine you're a kid passing secret notes in class. You don't want anyone else to read them, so you create a simple code:
 •	Replace A with D
-•	Replace B with E
+
+•	Replace B with E\
+
 •	Replace C with F
+
 •	And so on...
+
 This is exactly what Caesar Cipher does! It shifts every letter in your message by a certain number of positions in the alphabet.
 
 Real Example:
