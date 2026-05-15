@@ -85,9 +85,13 @@ Step 4: Explain What the Output Means and Why It Is Correct
 Understanding the Output:
 
 When we run the program with:
+
 •	Input: "HELLO"
+
 •	Shift: 3
+
 •	Action: Encrypt
+
 Output: Encrypted message: KHOOR
 
 Why Is This Correct?
@@ -112,14 +116,19 @@ Result: "HELLO" ✓ (We got our original message back!)
 
 Why the Code Works:
 1.	ord() and chr():
+
 •	These functions convert between letters and numbers
 •	Computers store letters as numbers (ASCII codes)
 •	This lets us do math on letters!
-3.	Modulo (%) Operation:
+
+2.	Modulo (%) Operation:
+
 •	Ensures we stay within 0-25 range
 •	Automatically wraps around the alphabet
 •	Example: 28 % 26 = 2 (goes back to beginning)
-4.	Negative Shift for Decryption:
+
+3.	Negative Shift for Decryption:
+
 •	Shifting forward by 3 is encryption
 •	Shifting backward by 3 (or forward by -3) is decryption
 •	They're opposite operations that cancel each other
@@ -134,16 +143,3 @@ Enter shift value (number): 5
 Do you want to (E)ncrypt or (D)ecrypt? E
 
 Encrypted message: MJQQT BTWQI
-Verification:
-•	H (+5) → M
-•	e (+5) → J (converted to uppercase first)
-•	l (+5) → Q
-•	l (+5) → Q
-•	o (+5) → T
-•	(space stays as space)
-•	W (+5) → B
-•	o (+5) → T
-•	r (+5) → W
-•	l (+5) → Q
-•	d (+5) → I
-
