@@ -2,6 +2,7 @@ In this task the problem statement is “Create a Python program that can encryp
 
 What is Caesar Cipher?
 Imagine you're a kid passing secret notes in class. You don't want anyone else to read them, so you create a simple code:
+
 •	Replace A with D
 
 •	Replace B with E\
@@ -13,26 +14,38 @@ Imagine you're a kid passing secret notes in class. You don't want anyone else t
 This is exactly what Caesar Cipher does! It shifts every letter in your message by a certain number of positions in the alphabet.
 
 Real Example:
+
 •	Original message: "HELLO"
+
 •	Shift: 3 (move each letter 3 positions forward)
+
 •	Encrypted message: "KHOOR"
 
 Why?
+
 •	H → K (H is 8th letter, K is 11th letter)
+
 •	E → H (E is 5th letter, H is 8th letter)
+
 •	L → O (L is 12th letter, O is 15th letter)
+
 •	L → O
+
 •	O → R (O is 15th letter, R is 18th letter)
 
 What We Need to Build:
-
 A program that:
+
 1.	Takes a message from the user (like "HELLO")
+
 2.	Takes a shift number (like 3)
-3.	Can encrypt (scramble) the message
+		
+3.	Can encrypt (scramble) the message\
+
 4.	Can decrypt (unscramble) the message back
 
 Step 2: Break the Problem into Small Sub-Tasks
+
 Let's think about what we need to do, piece by piece:
 
 Sub-Task 1: Get Input from User
