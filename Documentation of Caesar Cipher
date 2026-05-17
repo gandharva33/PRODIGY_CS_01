@@ -22,7 +22,6 @@ Real Example:
 •	Encrypted message: "KHOOR"
 
 Why?
-
 •	H → K (H is 8th letter, K is 11th letter)
 
 •	E → H (E is 5th letter, H is 8th letter)
@@ -116,19 +115,16 @@ Result: "HELLO" ✓ (We got our original message back!)
 
 Why the Code Works:
 1.	ord() and chr():
-
 •	These functions convert between letters and numbers
 •	Computers store letters as numbers (ASCII codes)
 •	This lets us do math on letters!
 
 2.	Modulo (%) Operation:
-
 •	Ensures we stay within 0-25 range
 •	Automatically wraps around the alphabet
 •	Example: 28 % 26 = 2 (goes back to beginning)
 
 3.	Negative Shift for Decryption:
-
 •	Shifting forward by 3 is encryption
 •	Shifting backward by 3 (or forward by -3) is decryption
 •	They're opposite operations that cancel each other
