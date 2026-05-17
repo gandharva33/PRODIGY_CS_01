@@ -1,41 +1,34 @@
-def encrypt_message(message, shift):
+def caesar_cipher(message, shift):
     result = ""
-    
+
     for char in message:
         if char.isalpha():
-            char = char.upper()
-            position = ord(char) - ord('A')
-            new_position = (position + shift) % 26
-            new_char = chr(new_position + ord('A'))
-            result = result + new_char
+            base = ord('A')
+            new_char = chr((ord(char.upper()) - base + shift) % 26 + base)
+            result += new_char
         else:
-            result = result + char
-    
+            result += char
+
     return result
-
-
-def decrypt_message(message, shift):
-    return encrypt_message(message, -shift)
 
 
 def main():
     print("=" * 40)
     print("   CAESAR CIPHER - ENCRYPTION TOOL")
     print("=" * 40)
-    print()
-    
-    message = input("Enter your message: ")
-    shift = int(input("Enter shift value (number): "))
-    choice = input("Do you want to (E)ncrypt or (D)ecrypt? ").upper()
-    
-    print()
-    
+
+    message = input("Enter your message : ")
+    shift   = int(input("Enter shift number  : "))
+    choice  = input("Encrypt or Decrypt? (E/D) : ").upper()
+
     if choice == 'E':
-        encrypted = encrypt_message(message, shift)
-        print("Encrypted message:", encrypted)
+        output = caesar_cipher(message, shift)
+        print("\nEncrypted Message :", output)
+
     elif choice == 'D':
-        decrypted = decrypt_message(message, shift)
-        print("Decrypted message:", decrypted)
+        output = caesar_cipher(message, -shift)
+        print("\nDecrypted Message :", output)
+
     else:
         print("Invalid choice! Please enter E or D.")
 
